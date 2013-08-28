@@ -1,0 +1,802 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		802FA77717B8CEFC003B011D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 802FA77617B8CEFC003B011D /* UIKit.framework */; };
+		802FA77917B8CEFC003B011D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 802FA77817B8CEFC003B011D /* Foundation.framework */; };
+		802FA77B17B8CEFC003B011D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 802FA77A17B8CEFC003B011D /* CoreGraphics.framework */; };
+		802FA78117B8CEFC003B011D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 802FA77F17B8CEFC003B011D /* InfoPlist.strings */; };
+		802FA78317B8CEFC003B011D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 802FA78217B8CEFC003B011D /* main.m */; };
+		802FA78717B8CEFC003B011D /* warrenAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 802FA78617B8CEFC003B011D /* warrenAppDelegate.m */; };
+		802FA78917B8CEFD003B011D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 802FA78817B8CEFD003B011D /* Default.png */; };
+		802FA78B17B8CEFD003B011D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 802FA78A17B8CEFD003B011D /* Default@2x.png */; };
+		802FA78D17B8CEFD003B011D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 802FA78C17B8CEFD003B011D /* Default-568h@2x.png */; };
+		802FA79017B8CEFD003B011D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 802FA78E17B8CEFD003B011D /* MainStoryboard.storyboard */; };
+		802FA79317B8CEFD003B011D /* warrenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 802FA79217B8CEFD003B011D /* warrenViewController.m */; };
+		803C4F1617C1F95D00D564DD /* Chapters.m in Sources */ = {isa = PBXBuildFile; fileRef = 803C4F1517C1F95D00D564DD /* Chapters.m */; };
+		8041B64F17C7673A0021874E /* S2ChapterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8041B64E17C7673A0021874E /* S2ChapterViewController.m */; };
+		8043D88D17CCE1CB002D1B7A /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8043D88B17CCE1CB002D1B7A /* MainStoryboard.storyboard */; };
+		8043D89717CCEA53002D1B7A /* All.png in Resources */ = {isa = PBXBuildFile; fileRef = 8043D89117CCEA53002D1B7A /* All.png */; };
+		8043D89817CCEA53002D1B7A /* Bag 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8043D89217CCEA53002D1B7A /* Bag 1.png */; };
+		8043D89917CCEA53002D1B7A /* Bag 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8043D89317CCEA53002D1B7A /* Bag 2.png */; };
+		8043D89A17CCEA53002D1B7A /* Bag 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 8043D89417CCEA53002D1B7A /* Bag 3.png */; };
+		8043D89B17CCEA53002D1B7A /* Bag 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 8043D89517CCEA53002D1B7A /* Bag 4.png */; };
+		8043D89C17CCEA53002D1B7A /* BagAll.png in Resources */ = {isa = PBXBuildFile; fileRef = 8043D89617CCEA53002D1B7A /* BagAll.png */; };
+		8043D8A017CCEC15002D1B7A /* BagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8043D89F17CCEC15002D1B7A /* BagViewController.m */; };
+		806A4D9B17B8D5C5009DC880 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 806A4D9A17B8D5C5009DC880 /* 1.png */; };
+		806A4D9F17B8D617009DC880 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 806A4D9C17B8D617009DC880 /* 2.png */; };
+		806A4DA017B8D617009DC880 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 806A4D9D17B8D617009DC880 /* 4.png */; };
+		806A4DA117B8D617009DC880 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 806A4D9E17B8D617009DC880 /* 3.png */; };
+		806A68CA17CB50C500598DCA /* Simultaneous Equation.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 806A68C017CB50C500598DCA /* Simultaneous Equation.pdf */; };
+		806A68CB17CB50C500598DCA /* Significant Figures, Indices and Standard Form.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 806A68C117CB50C500598DCA /* Significant Figures, Indices and Standard Form.pdf */; };
+		806A68CC17CB50C500598DCA /* Trigonometry.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 806A68C217CB50C500598DCA /* Trigonometry.pdf */; };
+		806A68CD17CB50C500598DCA /* Quadratic Graphs.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 806A68C317CB50C500598DCA /* Quadratic Graphs.pdf */; };
+		806A68CE17CB50C500598DCA /* Solving Quadratic Equations.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 806A68C417CB50C500598DCA /* Solving Quadratic Equations.pdf */; };
+		806A68CF17CB50C500598DCA /* Mensuration.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 806A68C517CB50C500598DCA /* Mensuration.pdf */; };
+		806A68D017CB50C500598DCA /* Similarity and Congruency.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 806A68C617CB50C500598DCA /* Similarity and Congruency.pdf */; };
+		806A68D117CB50C500598DCA /* Algebraic Fractions & Manipulation.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 806A68C717CB50C500598DCA /* Algebraic Fractions & Manipulation.pdf */; };
+		806A68D217CB50C500598DCA /* Sets.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 806A68C817CB50C500598DCA /* Sets.pdf */; };
+		806A68D317CB50C500598DCA /* Pythagoras Theorem.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 806A68C917CB50C500598DCA /* Pythagoras Theorem.pdf */; };
+		806A68D917CB6AB700598DCA /* TabBarImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 806A68D817CB6AB700598DCA /* TabBarImage.png */; };
+		806A68E017CB6D9F00598DCA /* OverallChapterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 806A68DD17CB6D9F00598DCA /* OverallChapterViewController.m */; };
+		806A68E117CB6D9F00598DCA /* OverallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 806A68DF17CB6D9F00598DCA /* OverallViewController.m */; };
+		809C1AC417C20F9F00E56416 /* Sec2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 809C1AC317C20F9F00E56416 /* Sec2ViewController.m */; };
+		80DD026917CCDFC600E19059 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 802FA77617B8CEFC003B011D /* UIKit.framework */; };
+		80DD026A17CCDFC600E19059 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 802FA77817B8CEFC003B011D /* Foundation.framework */; };
+		80DD026B17CCDFC600E19059 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 802FA77A17B8CEFC003B011D /* CoreGraphics.framework */; };
+		80DD027117CCDFC600E19059 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80DD026F17CCDFC600E19059 /* InfoPlist.strings */; };
+		80DD027317CCDFC600E19059 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80DD027217CCDFC600E19059 /* main.m */; };
+		80DD027717CCDFC600E19059 /* warrenAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80DD027617CCDFC600E19059 /* warrenAppDelegate.m */; };
+		80DD027917CCDFC600E19059 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 80DD027817CCDFC600E19059 /* Default.png */; };
+		80DD027B17CCDFC600E19059 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 80DD027A17CCDFC600E19059 /* Default@2x.png */; };
+		80DD027D17CCDFC600E19059 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 80DD027C17CCDFC600E19059 /* Default-568h@2x.png */; };
+		80DD028317CCDFC700E19059 /* warrenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80DD028217CCDFC700E19059 /* warrenViewController.m */; };
+		80DD02B117CCE03700E19059 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 80DD028717CCE03700E19059 /* 1.png */; };
+		80DD02B217CCE03700E19059 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 80DD028817CCE03700E19059 /* 2.png */; };
+		80DD02B317CCE03700E19059 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 80DD028917CCE03700E19059 /* 3.png */; };
+		80DD02B417CCE03700E19059 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 80DD028A17CCE03700E19059 /* 4.png */; };
+		80DD02B517CCE03700E19059 /* Algebraic Fractions & Manipulation.pages in Resources */ = {isa = PBXBuildFile; fileRef = 80DD028B17CCE03700E19059 /* Algebraic Fractions & Manipulation.pages */; };
+		80DD02B617CCE03700E19059 /* Algebraic Fractions & Manipulation.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 80DD028C17CCE03700E19059 /* Algebraic Fractions & Manipulation.pdf */; };
+		80DD02B717CCE03700E19059 /* Chapters.m in Sources */ = {isa = PBXBuildFile; fileRef = 80DD028E17CCE03700E19059 /* Chapters.m */; };
+		80DD02B817CCE03700E19059 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80DD029017CCE03700E19059 /* InfoPlist.strings */; };
+		80DD02BA17CCE03700E19059 /* Learning [Math Notes]-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80DD029417CCE03700E19059 /* Learning [Math Notes]-Info.plist */; };
+		80DD02BB17CCE03700E19059 /* Mensuration.pages in Resources */ = {isa = PBXBuildFile; fileRef = 80DD029617CCE03700E19059 /* Mensuration.pages */; };
+		80DD02BC17CCE03700E19059 /* Mensuration.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 80DD029717CCE03700E19059 /* Mensuration.pdf */; };
+		80DD02BD17CCE03700E19059 /* OverallChapterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80DD029917CCE03700E19059 /* OverallChapterViewController.m */; };
+		80DD02BE17CCE03700E19059 /* OverallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80DD029B17CCE03700E19059 /* OverallViewController.m */; };
+		80DD02BF17CCE03700E19059 /* Pythagoras Theorem.pages in Resources */ = {isa = PBXBuildFile; fileRef = 80DD029C17CCE03700E19059 /* Pythagoras Theorem.pages */; };
+		80DD02C017CCE03700E19059 /* Pythagoras Theorem.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 80DD029D17CCE03700E19059 /* Pythagoras Theorem.pdf */; };
+		80DD02C117CCE03700E19059 /* Quadratic Graphs.pages in Resources */ = {isa = PBXBuildFile; fileRef = 80DD029E17CCE03700E19059 /* Quadratic Graphs.pages */; };
+		80DD02C217CCE03700E19059 /* Quadratic Graphs.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 80DD029F17CCE03700E19059 /* Quadratic Graphs.pdf */; };
+		80DD02C317CCE03700E19059 /* S2ChapterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80DD02A117CCE03700E19059 /* S2ChapterViewController.m */; };
+		80DD02C417CCE03700E19059 /* Sec2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80DD02A317CCE03700E19059 /* Sec2ViewController.m */; };
+		80DD02C517CCE03700E19059 /* Sets.pages in Resources */ = {isa = PBXBuildFile; fileRef = 80DD02A417CCE03700E19059 /* Sets.pages */; };
+		80DD02C617CCE03700E19059 /* Sets.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 80DD02A517CCE03700E19059 /* Sets.pdf */; };
+		80DD02C717CCE03700E19059 /* Significant Figures, Indices and Standard Form.pages in Resources */ = {isa = PBXBuildFile; fileRef = 80DD02A617CCE03700E19059 /* Significant Figures, Indices and Standard Form.pages */; };
+		80DD02C817CCE03700E19059 /* Significant Figures, Indices and Standard Form.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 80DD02A717CCE03700E19059 /* Significant Figures, Indices and Standard Form.pdf */; };
+		80DD02C917CCE03700E19059 /* Similarity and Congruency.pages in Resources */ = {isa = PBXBuildFile; fileRef = 80DD02A817CCE03700E19059 /* Similarity and Congruency.pages */; };
+		80DD02CA17CCE03700E19059 /* Similarity and Congruency.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 80DD02A917CCE03700E19059 /* Similarity and Congruency.pdf */; };
+		80DD02CB17CCE03700E19059 /* Simultaneous Equation.pages in Resources */ = {isa = PBXBuildFile; fileRef = 80DD02AA17CCE03700E19059 /* Simultaneous Equation.pages */; };
+		80DD02CC17CCE03700E19059 /* Simultaneous Equation.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 80DD02AB17CCE03700E19059 /* Simultaneous Equation.pdf */; };
+		80DD02CD17CCE03700E19059 /* Solving Quadratic Equations.pages in Resources */ = {isa = PBXBuildFile; fileRef = 80DD02AC17CCE03700E19059 /* Solving Quadratic Equations.pages */; };
+		80DD02CE17CCE03700E19059 /* Solving Quadratic Equations.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 80DD02AD17CCE03700E19059 /* Solving Quadratic Equations.pdf */; };
+		80DD02CF17CCE03700E19059 /* TabBarImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 80DD02AE17CCE03700E19059 /* TabBarImage.png */; };
+		80DD02D017CCE03700E19059 /* Trigonometry.pages in Resources */ = {isa = PBXBuildFile; fileRef = 80DD02AF17CCE03700E19059 /* Trigonometry.pages */; };
+		80DD02D117CCE03700E19059 /* Trigonometry.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 80DD02B017CCE03700E19059 /* Trigonometry.pdf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		802FA77317B8CEFC003B011D /* Learning [Math Notes].app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Learning [Math Notes].app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		802FA77617B8CEFC003B011D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		802FA77817B8CEFC003B011D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		802FA77A17B8CEFC003B011D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		802FA77E17B8CEFC003B011D /* Learning [Math Notes]-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Learning [Math Notes]-Info.plist"; sourceTree = "<group>"; };
+		802FA78017B8CEFC003B011D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		802FA78217B8CEFC003B011D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		802FA78417B8CEFC003B011D /* Learning [Math Notes]-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Learning [Math Notes]-Prefix.pch"; sourceTree = "<group>"; };
+		802FA78517B8CEFC003B011D /* warrenAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = warrenAppDelegate.h; sourceTree = "<group>"; };
+		802FA78617B8CEFC003B011D /* warrenAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = warrenAppDelegate.m; sourceTree = "<group>"; };
+		802FA78817B8CEFD003B011D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		802FA78A17B8CEFD003B011D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		802FA78C17B8CEFD003B011D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		802FA78F17B8CEFD003B011D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		802FA79117B8CEFD003B011D /* warrenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = warrenViewController.h; sourceTree = "<group>"; };
+		802FA79217B8CEFD003B011D /* warrenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = warrenViewController.m; sourceTree = "<group>"; };
+		803C4F1417C1F95D00D564DD /* Chapters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chapters.h; sourceTree = "<group>"; };
+		803C4F1517C1F95D00D564DD /* Chapters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chapters.m; sourceTree = "<group>"; };
+		8041B64D17C7673A0021874E /* S2ChapterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = S2ChapterViewController.h; path = "/Users/Warren/Documents/Personal/XCode/Learning [Math Notes]/Learning [Math Notes]/S2ChapterViewController.h"; sourceTree = "<absolute>"; };
+		8041B64E17C7673A0021874E /* S2ChapterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = S2ChapterViewController.m; sourceTree = "<group>"; };
+		8043D88C17CCE1CB002D1B7A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		8043D89117CCEA53002D1B7A /* All.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = All.png; sourceTree = "<group>"; };
+		8043D89217CCEA53002D1B7A /* Bag 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bag 1.png"; sourceTree = "<group>"; };
+		8043D89317CCEA53002D1B7A /* Bag 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bag 2.png"; sourceTree = "<group>"; };
+		8043D89417CCEA53002D1B7A /* Bag 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bag 3.png"; sourceTree = "<group>"; };
+		8043D89517CCEA53002D1B7A /* Bag 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bag 4.png"; sourceTree = "<group>"; };
+		8043D89617CCEA53002D1B7A /* BagAll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BagAll.png; sourceTree = "<group>"; };
+		8043D89E17CCEC15002D1B7A /* BagViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BagViewController.h; sourceTree = "<group>"; };
+		8043D89F17CCEC15002D1B7A /* BagViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BagViewController.m; sourceTree = "<group>"; };
+		806A4D9A17B8D5C5009DC880 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		806A4D9C17B8D617009DC880 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		806A4D9D17B8D617009DC880 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		806A4D9E17B8D617009DC880 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		806A68B617CB4F1500598DCA /* Sets.pages */ = {isa = PBXFileReference; lastKnownFileType = file; path = Sets.pages; sourceTree = "<group>"; };
+		806A68C017CB50C500598DCA /* Simultaneous Equation.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Simultaneous Equation.pdf"; sourceTree = "<group>"; };
+		806A68C117CB50C500598DCA /* Significant Figures, Indices and Standard Form.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Significant Figures, Indices and Standard Form.pdf"; sourceTree = "<group>"; };
+		806A68C217CB50C500598DCA /* Trigonometry.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Trigonometry.pdf; sourceTree = "<group>"; };
+		806A68C317CB50C500598DCA /* Quadratic Graphs.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Quadratic Graphs.pdf"; sourceTree = "<group>"; };
+		806A68C417CB50C500598DCA /* Solving Quadratic Equations.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Solving Quadratic Equations.pdf"; sourceTree = "<group>"; };
+		806A68C517CB50C500598DCA /* Mensuration.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Mensuration.pdf; sourceTree = "<group>"; };
+		806A68C617CB50C500598DCA /* Similarity and Congruency.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Similarity and Congruency.pdf"; sourceTree = "<group>"; };
+		806A68C717CB50C500598DCA /* Algebraic Fractions & Manipulation.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Algebraic Fractions & Manipulation.pdf"; sourceTree = "<group>"; };
+		806A68C817CB50C500598DCA /* Sets.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Sets.pdf; sourceTree = "<group>"; };
+		806A68C917CB50C500598DCA /* Pythagoras Theorem.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Pythagoras Theorem.pdf"; sourceTree = "<group>"; };
+		806A68D817CB6AB700598DCA /* TabBarImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabBarImage.png; sourceTree = "<group>"; };
+		806A68DC17CB6D9F00598DCA /* OverallChapterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverallChapterViewController.h; sourceTree = "<group>"; };
+		806A68DD17CB6D9F00598DCA /* OverallChapterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverallChapterViewController.m; sourceTree = "<group>"; };
+		806A68DE17CB6D9F00598DCA /* OverallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverallViewController.h; sourceTree = "<group>"; };
+		806A68DF17CB6D9F00598DCA /* OverallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverallViewController.m; sourceTree = "<group>"; };
+		809C1AC217C20F9F00E56416 /* Sec2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sec2ViewController.h; sourceTree = "<group>"; };
+		809C1AC317C20F9F00E56416 /* Sec2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sec2ViewController.m; sourceTree = "<group>"; };
+		80DD026817CCDFC600E19059 /* Learning [Math Notes]2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Learning [Math Notes]2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		80DD026E17CCDFC600E19059 /* Learning [Math Notes]2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Learning [Math Notes]2-Info.plist"; sourceTree = "<group>"; };
+		80DD027017CCDFC600E19059 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		80DD027217CCDFC600E19059 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		80DD027417CCDFC600E19059 /* Learning [Math Notes]2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Learning [Math Notes]2-Prefix.pch"; sourceTree = "<group>"; };
+		80DD027517CCDFC600E19059 /* warrenAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = warrenAppDelegate.h; sourceTree = "<group>"; };
+		80DD027617CCDFC600E19059 /* warrenAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = warrenAppDelegate.m; sourceTree = "<group>"; };
+		80DD027817CCDFC600E19059 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		80DD027A17CCDFC600E19059 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		80DD027C17CCDFC600E19059 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		80DD028117CCDFC700E19059 /* warrenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = warrenViewController.h; sourceTree = "<group>"; };
+		80DD028217CCDFC700E19059 /* warrenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = warrenViewController.m; sourceTree = "<group>"; };
+		80DD028717CCE03700E19059 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		80DD028817CCE03700E19059 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		80DD028917CCE03700E19059 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		80DD028A17CCE03700E19059 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		80DD028B17CCE03700E19059 /* Algebraic Fractions & Manipulation.pages */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Algebraic Fractions & Manipulation.pages"; sourceTree = "<group>"; };
+		80DD028C17CCE03700E19059 /* Algebraic Fractions & Manipulation.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Algebraic Fractions & Manipulation.pdf"; sourceTree = "<group>"; };
+		80DD028D17CCE03700E19059 /* Chapters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chapters.h; sourceTree = "<group>"; };
+		80DD028E17CCE03700E19059 /* Chapters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chapters.m; sourceTree = "<group>"; };
+		80DD029117CCE03700E19059 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		80DD029417CCE03700E19059 /* Learning [Math Notes]-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Learning [Math Notes]-Info.plist"; sourceTree = "<group>"; };
+		80DD029517CCE03700E19059 /* Learning [Math Notes]-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Learning [Math Notes]-Prefix.pch"; sourceTree = "<group>"; };
+		80DD029617CCE03700E19059 /* Mensuration.pages */ = {isa = PBXFileReference; lastKnownFileType = file; path = Mensuration.pages; sourceTree = "<group>"; };
+		80DD029717CCE03700E19059 /* Mensuration.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Mensuration.pdf; sourceTree = "<group>"; };
+		80DD029817CCE03700E19059 /* OverallChapterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverallChapterViewController.h; sourceTree = "<group>"; };
+		80DD029917CCE03700E19059 /* OverallChapterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverallChapterViewController.m; sourceTree = "<group>"; };
+		80DD029A17CCE03700E19059 /* OverallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverallViewController.h; sourceTree = "<group>"; };
+		80DD029B17CCE03700E19059 /* OverallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverallViewController.m; sourceTree = "<group>"; };
+		80DD029C17CCE03700E19059 /* Pythagoras Theorem.pages */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pythagoras Theorem.pages"; sourceTree = "<group>"; };
+		80DD029D17CCE03700E19059 /* Pythagoras Theorem.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Pythagoras Theorem.pdf"; sourceTree = "<group>"; };
+		80DD029E17CCE03700E19059 /* Quadratic Graphs.pages */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quadratic Graphs.pages"; sourceTree = "<group>"; };
+		80DD029F17CCE03700E19059 /* Quadratic Graphs.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Quadratic Graphs.pdf"; sourceTree = "<group>"; };
+		80DD02A017CCE03700E19059 /* S2ChapterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = S2ChapterViewController.h; sourceTree = "<group>"; };
+		80DD02A117CCE03700E19059 /* S2ChapterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = S2ChapterViewController.m; sourceTree = "<group>"; };
+		80DD02A217CCE03700E19059 /* Sec2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sec2ViewController.h; sourceTree = "<group>"; };
+		80DD02A317CCE03700E19059 /* Sec2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sec2ViewController.m; sourceTree = "<group>"; };
+		80DD02A417CCE03700E19059 /* Sets.pages */ = {isa = PBXFileReference; lastKnownFileType = file; path = Sets.pages; sourceTree = "<group>"; };
+		80DD02A517CCE03700E19059 /* Sets.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Sets.pdf; sourceTree = "<group>"; };
+		80DD02A617CCE03700E19059 /* Significant Figures, Indices and Standard Form.pages */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Significant Figures, Indices and Standard Form.pages"; sourceTree = "<group>"; };
+		80DD02A717CCE03700E19059 /* Significant Figures, Indices and Standard Form.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Significant Figures, Indices and Standard Form.pdf"; sourceTree = "<group>"; };
+		80DD02A817CCE03700E19059 /* Similarity and Congruency.pages */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Similarity and Congruency.pages"; sourceTree = "<group>"; };
+		80DD02A917CCE03700E19059 /* Similarity and Congruency.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Similarity and Congruency.pdf"; sourceTree = "<group>"; };
+		80DD02AA17CCE03700E19059 /* Simultaneous Equation.pages */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Simultaneous Equation.pages"; sourceTree = "<group>"; };
+		80DD02AB17CCE03700E19059 /* Simultaneous Equation.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Simultaneous Equation.pdf"; sourceTree = "<group>"; };
+		80DD02AC17CCE03700E19059 /* Solving Quadratic Equations.pages */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Solving Quadratic Equations.pages"; sourceTree = "<group>"; };
+		80DD02AD17CCE03700E19059 /* Solving Quadratic Equations.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Solving Quadratic Equations.pdf"; sourceTree = "<group>"; };
+		80DD02AE17CCE03700E19059 /* TabBarImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabBarImage.png; sourceTree = "<group>"; };
+		80DD02AF17CCE03700E19059 /* Trigonometry.pages */ = {isa = PBXFileReference; lastKnownFileType = file; path = Trigonometry.pages; sourceTree = "<group>"; };
+		80DD02B017CCE03700E19059 /* Trigonometry.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Trigonometry.pdf; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		802FA77017B8CEFC003B011D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				802FA77717B8CEFC003B011D /* UIKit.framework in Frameworks */,
+				802FA77917B8CEFC003B011D /* Foundation.framework in Frameworks */,
+				802FA77B17B8CEFC003B011D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80DD026517CCDFC600E19059 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80DD026917CCDFC600E19059 /* UIKit.framework in Frameworks */,
+				80DD026A17CCDFC600E19059 /* Foundation.framework in Frameworks */,
+				80DD026B17CCDFC600E19059 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		802FA76A17B8CEFC003B011D = {
+			isa = PBXGroup;
+			children = (
+				802FA77C17B8CEFC003B011D /* Learning [Math Notes] */,
+				80DD026C17CCDFC600E19059 /* Learning [Math Notes]2 */,
+				802FA77517B8CEFC003B011D /* Frameworks */,
+				802FA77417B8CEFC003B011D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		802FA77417B8CEFC003B011D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				802FA77317B8CEFC003B011D /* Learning [Math Notes].app */,
+				80DD026817CCDFC600E19059 /* Learning [Math Notes]2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		802FA77517B8CEFC003B011D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				802FA77617B8CEFC003B011D /* UIKit.framework */,
+				802FA77817B8CEFC003B011D /* Foundation.framework */,
+				802FA77A17B8CEFC003B011D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		802FA77C17B8CEFC003B011D /* Learning [Math Notes] */ = {
+			isa = PBXGroup;
+			children = (
+				802FA78517B8CEFC003B011D /* warrenAppDelegate.h */,
+				802FA78617B8CEFC003B011D /* warrenAppDelegate.m */,
+				803C4F1417C1F95D00D564DD /* Chapters.h */,
+				803C4F1517C1F95D00D564DD /* Chapters.m */,
+				802FA78E17B8CEFD003B011D /* MainStoryboard.storyboard */,
+				806A68DB17CB6D7C00598DCA /* Overall */,
+				806A68DA17CB6AE600598DCA /* Sec 2 */,
+				802FA79117B8CEFD003B011D /* warrenViewController.h */,
+				802FA79217B8CEFD003B011D /* warrenViewController.m */,
+				802FA77D17B8CEFC003B011D /* Supporting Files */,
+			);
+			path = "Learning [Math Notes]";
+			sourceTree = "<group>";
+		};
+		802FA77D17B8CEFC003B011D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				806A68D617CB6A2B00598DCA /* Sec 2 Notes */,
+				806A68D717CB6A3B00598DCA /* Tab Bar Images */,
+				802FA77E17B8CEFC003B011D /* Learning [Math Notes]-Info.plist */,
+				802FA77F17B8CEFC003B011D /* InfoPlist.strings */,
+				802FA78217B8CEFC003B011D /* main.m */,
+				802FA78417B8CEFC003B011D /* Learning [Math Notes]-Prefix.pch */,
+				802FA78817B8CEFD003B011D /* Default.png */,
+				802FA78A17B8CEFD003B011D /* Default@2x.png */,
+				802FA78C17B8CEFD003B011D /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8043D88717CCE0B0002D1B7A /* Tab Bar Images */ = {
+			isa = PBXGroup;
+			children = (
+				80DD02AE17CCE03700E19059 /* TabBarImage.png */,
+				80DD028717CCE03700E19059 /* 1.png */,
+				80DD028817CCE03700E19059 /* 2.png */,
+				80DD028917CCE03700E19059 /* 3.png */,
+				80DD028A17CCE03700E19059 /* 4.png */,
+			);
+			name = "Tab Bar Images";
+			sourceTree = "<group>";
+		};
+		8043D88817CCE0CA002D1B7A /* Sec 2 Notes */ = {
+			isa = PBXGroup;
+			children = (
+				80DD028B17CCE03700E19059 /* Algebraic Fractions & Manipulation.pages */,
+				80DD028C17CCE03700E19059 /* Algebraic Fractions & Manipulation.pdf */,
+				80DD029617CCE03700E19059 /* Mensuration.pages */,
+				80DD029717CCE03700E19059 /* Mensuration.pdf */,
+				80DD029C17CCE03700E19059 /* Pythagoras Theorem.pages */,
+				80DD029D17CCE03700E19059 /* Pythagoras Theorem.pdf */,
+				80DD029E17CCE03700E19059 /* Quadratic Graphs.pages */,
+				80DD029F17CCE03700E19059 /* Quadratic Graphs.pdf */,
+				80DD02A417CCE03700E19059 /* Sets.pages */,
+				80DD02A517CCE03700E19059 /* Sets.pdf */,
+				80DD02A617CCE03700E19059 /* Significant Figures, Indices and Standard Form.pages */,
+				80DD02A717CCE03700E19059 /* Significant Figures, Indices and Standard Form.pdf */,
+				80DD02A817CCE03700E19059 /* Similarity and Congruency.pages */,
+				80DD02A917CCE03700E19059 /* Similarity and Congruency.pdf */,
+				80DD02AA17CCE03700E19059 /* Simultaneous Equation.pages */,
+				80DD02AB17CCE03700E19059 /* Simultaneous Equation.pdf */,
+				80DD02AC17CCE03700E19059 /* Solving Quadratic Equations.pages */,
+				80DD02AD17CCE03700E19059 /* Solving Quadratic Equations.pdf */,
+				80DD02AF17CCE03700E19059 /* Trigonometry.pages */,
+				80DD02B017CCE03700E19059 /* Trigonometry.pdf */,
+			);
+			name = "Sec 2 Notes";
+			sourceTree = "<group>";
+		};
+		8043D88917CCE11C002D1B7A /* Overall */ = {
+			isa = PBXGroup;
+			children = (
+				80DD029817CCE03700E19059 /* OverallChapterViewController.h */,
+				80DD029917CCE03700E19059 /* OverallChapterViewController.m */,
+				80DD029A17CCE03700E19059 /* OverallViewController.h */,
+				80DD029B17CCE03700E19059 /* OverallViewController.m */,
+			);
+			name = Overall;
+			sourceTree = "<group>";
+		};
+		8043D88A17CCE122002D1B7A /* Sec 2 */ = {
+			isa = PBXGroup;
+			children = (
+				80DD02A017CCE03700E19059 /* S2ChapterViewController.h */,
+				80DD02A117CCE03700E19059 /* S2ChapterViewController.m */,
+				80DD02A217CCE03700E19059 /* Sec2ViewController.h */,
+				80DD02A317CCE03700E19059 /* Sec2ViewController.m */,
+			);
+			name = "Sec 2";
+			sourceTree = "<group>";
+		};
+		8043D89D17CCEA61002D1B7A /* Bags */ = {
+			isa = PBXGroup;
+			children = (
+				8043D89117CCEA53002D1B7A /* All.png */,
+				8043D89217CCEA53002D1B7A /* Bag 1.png */,
+				8043D89317CCEA53002D1B7A /* Bag 2.png */,
+				8043D89417CCEA53002D1B7A /* Bag 3.png */,
+				8043D89517CCEA53002D1B7A /* Bag 4.png */,
+				8043D89617CCEA53002D1B7A /* BagAll.png */,
+			);
+			name = Bags;
+			sourceTree = "<group>";
+		};
+		806A68D617CB6A2B00598DCA /* Sec 2 Notes */ = {
+			isa = PBXGroup;
+			children = (
+				806A68C017CB50C500598DCA /* Simultaneous Equation.pdf */,
+				806A68C117CB50C500598DCA /* Significant Figures, Indices and Standard Form.pdf */,
+				806A68C217CB50C500598DCA /* Trigonometry.pdf */,
+				806A68C317CB50C500598DCA /* Quadratic Graphs.pdf */,
+				806A68C417CB50C500598DCA /* Solving Quadratic Equations.pdf */,
+				806A68C517CB50C500598DCA /* Mensuration.pdf */,
+				806A68C617CB50C500598DCA /* Similarity and Congruency.pdf */,
+				806A68C717CB50C500598DCA /* Algebraic Fractions & Manipulation.pdf */,
+				806A68C817CB50C500598DCA /* Sets.pdf */,
+				806A68C917CB50C500598DCA /* Pythagoras Theorem.pdf */,
+				806A68B617CB4F1500598DCA /* Sets.pages */,
+			);
+			name = "Sec 2 Notes";
+			sourceTree = "<group>";
+		};
+		806A68D717CB6A3B00598DCA /* Tab Bar Images */ = {
+			isa = PBXGroup;
+			children = (
+				806A68D817CB6AB700598DCA /* TabBarImage.png */,
+				806A4D9C17B8D617009DC880 /* 2.png */,
+				806A4D9D17B8D617009DC880 /* 4.png */,
+				806A4D9E17B8D617009DC880 /* 3.png */,
+				806A4D9A17B8D5C5009DC880 /* 1.png */,
+			);
+			name = "Tab Bar Images";
+			sourceTree = "<group>";
+		};
+		806A68DA17CB6AE600598DCA /* Sec 2 */ = {
+			isa = PBXGroup;
+			children = (
+				809C1AC217C20F9F00E56416 /* Sec2ViewController.h */,
+				809C1AC317C20F9F00E56416 /* Sec2ViewController.m */,
+				8041B64D17C7673A0021874E /* S2ChapterViewController.h */,
+				8041B64E17C7673A0021874E /* S2ChapterViewController.m */,
+			);
+			name = "Sec 2";
+			sourceTree = "<group>";
+		};
+		806A68DB17CB6D7C00598DCA /* Overall */ = {
+			isa = PBXGroup;
+			children = (
+				806A68DE17CB6D9F00598DCA /* OverallViewController.h */,
+				806A68DF17CB6D9F00598DCA /* OverallViewController.m */,
+				806A68DC17CB6D9F00598DCA /* OverallChapterViewController.h */,
+				806A68DD17CB6D9F00598DCA /* OverallChapterViewController.m */,
+			);
+			name = Overall;
+			sourceTree = "<group>";
+		};
+		80DD026C17CCDFC600E19059 /* Learning [Math Notes]2 */ = {
+			isa = PBXGroup;
+			children = (
+				80DD027517CCDFC600E19059 /* warrenAppDelegate.h */,
+				80DD027617CCDFC600E19059 /* warrenAppDelegate.m */,
+				8043D88B17CCE1CB002D1B7A /* MainStoryboard.storyboard */,
+				80DD028D17CCE03700E19059 /* Chapters.h */,
+				80DD028E17CCE03700E19059 /* Chapters.m */,
+				8043D89E17CCEC15002D1B7A /* BagViewController.h */,
+				8043D89F17CCEC15002D1B7A /* BagViewController.m */,
+				8043D88917CCE11C002D1B7A /* Overall */,
+				8043D88A17CCE122002D1B7A /* Sec 2 */,
+				80DD028117CCDFC700E19059 /* warrenViewController.h */,
+				80DD028217CCDFC700E19059 /* warrenViewController.m */,
+				80DD026D17CCDFC600E19059 /* Supporting Files */,
+			);
+			path = "Learning [Math Notes]2";
+			sourceTree = "<group>";
+		};
+		80DD026D17CCDFC600E19059 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8043D89D17CCEA61002D1B7A /* Bags */,
+				8043D88717CCE0B0002D1B7A /* Tab Bar Images */,
+				8043D88817CCE0CA002D1B7A /* Sec 2 Notes */,
+				80DD029017CCE03700E19059 /* InfoPlist.strings */,
+				80DD029417CCE03700E19059 /* Learning [Math Notes]-Info.plist */,
+				80DD029517CCE03700E19059 /* Learning [Math Notes]-Prefix.pch */,
+				80DD026E17CCDFC600E19059 /* Learning [Math Notes]2-Info.plist */,
+				80DD026F17CCDFC600E19059 /* InfoPlist.strings */,
+				80DD027217CCDFC600E19059 /* main.m */,
+				80DD027417CCDFC600E19059 /* Learning [Math Notes]2-Prefix.pch */,
+				80DD027817CCDFC600E19059 /* Default.png */,
+				80DD027A17CCDFC600E19059 /* Default@2x.png */,
+				80DD027C17CCDFC600E19059 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		802FA77217B8CEFC003B011D /* Learning [Math Notes] */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 802FA79617B8CEFD003B011D /* Build configuration list for PBXNativeTarget "Learning [Math Notes]" */;
+			buildPhases = (
+				802FA76F17B8CEFC003B011D /* Sources */,
+				802FA77017B8CEFC003B011D /* Frameworks */,
+				802FA77117B8CEFC003B011D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Learning [Math Notes]";
+			productName = "Learning [Math Notes]";
+			productReference = 802FA77317B8CEFC003B011D /* Learning [Math Notes].app */;
+			productType = "com.apple.product-type.application";
+		};
+		80DD026717CCDFC600E19059 /* Learning [Math Notes]2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80DD028617CCDFC700E19059 /* Build configuration list for PBXNativeTarget "Learning [Math Notes]2" */;
+			buildPhases = (
+				80DD026417CCDFC600E19059 /* Sources */,
+				80DD026517CCDFC600E19059 /* Frameworks */,
+				80DD026617CCDFC600E19059 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Learning [Math Notes]2";
+			productName = "Learning [Math Notes]2";
+			productReference = 80DD026817CCDFC600E19059 /* Learning [Math Notes]2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		802FA76B17B8CEFC003B011D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = warren;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = warren;
+			};
+			buildConfigurationList = 802FA76E17B8CEFC003B011D /* Build configuration list for PBXProject "Learning [Math Notes]" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 802FA76A17B8CEFC003B011D;
+			productRefGroup = 802FA77417B8CEFC003B011D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				802FA77217B8CEFC003B011D /* Learning [Math Notes] */,
+				80DD026717CCDFC600E19059 /* Learning [Math Notes]2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		802FA77117B8CEFC003B011D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				802FA78117B8CEFC003B011D /* InfoPlist.strings in Resources */,
+				802FA78917B8CEFD003B011D /* Default.png in Resources */,
+				802FA78B17B8CEFD003B011D /* Default@2x.png in Resources */,
+				802FA78D17B8CEFD003B011D /* Default-568h@2x.png in Resources */,
+				802FA79017B8CEFD003B011D /* MainStoryboard.storyboard in Resources */,
+				806A4D9B17B8D5C5009DC880 /* 1.png in Resources */,
+				806A4D9F17B8D617009DC880 /* 2.png in Resources */,
+				806A4DA017B8D617009DC880 /* 4.png in Resources */,
+				806A4DA117B8D617009DC880 /* 3.png in Resources */,
+				806A68CA17CB50C500598DCA /* Simultaneous Equation.pdf in Resources */,
+				806A68CB17CB50C500598DCA /* Significant Figures, Indices and Standard Form.pdf in Resources */,
+				806A68CC17CB50C500598DCA /* Trigonometry.pdf in Resources */,
+				806A68CD17CB50C500598DCA /* Quadratic Graphs.pdf in Resources */,
+				806A68CE17CB50C500598DCA /* Solving Quadratic Equations.pdf in Resources */,
+				806A68CF17CB50C500598DCA /* Mensuration.pdf in Resources */,
+				806A68D017CB50C500598DCA /* Similarity and Congruency.pdf in Resources */,
+				806A68D117CB50C500598DCA /* Algebraic Fractions & Manipulation.pdf in Resources */,
+				806A68D217CB50C500598DCA /* Sets.pdf in Resources */,
+				806A68D317CB50C500598DCA /* Pythagoras Theorem.pdf in Resources */,
+				806A68D917CB6AB700598DCA /* TabBarImage.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80DD026617CCDFC600E19059 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80DD027117CCDFC600E19059 /* InfoPlist.strings in Resources */,
+				80DD027917CCDFC600E19059 /* Default.png in Resources */,
+				80DD027B17CCDFC600E19059 /* Default@2x.png in Resources */,
+				80DD027D17CCDFC600E19059 /* Default-568h@2x.png in Resources */,
+				80DD02B117CCE03700E19059 /* 1.png in Resources */,
+				80DD02B217CCE03700E19059 /* 2.png in Resources */,
+				80DD02B317CCE03700E19059 /* 3.png in Resources */,
+				80DD02B417CCE03700E19059 /* 4.png in Resources */,
+				80DD02B517CCE03700E19059 /* Algebraic Fractions & Manipulation.pages in Resources */,
+				80DD02B617CCE03700E19059 /* Algebraic Fractions & Manipulation.pdf in Resources */,
+				80DD02B817CCE03700E19059 /* InfoPlist.strings in Resources */,
+				80DD02BA17CCE03700E19059 /* Learning [Math Notes]-Info.plist in Resources */,
+				80DD02BB17CCE03700E19059 /* Mensuration.pages in Resources */,
+				80DD02BC17CCE03700E19059 /* Mensuration.pdf in Resources */,
+				80DD02BF17CCE03700E19059 /* Pythagoras Theorem.pages in Resources */,
+				80DD02C017CCE03700E19059 /* Pythagoras Theorem.pdf in Resources */,
+				80DD02C117CCE03700E19059 /* Quadratic Graphs.pages in Resources */,
+				80DD02C217CCE03700E19059 /* Quadratic Graphs.pdf in Resources */,
+				80DD02C517CCE03700E19059 /* Sets.pages in Resources */,
+				80DD02C617CCE03700E19059 /* Sets.pdf in Resources */,
+				80DD02C717CCE03700E19059 /* Significant Figures, Indices and Standard Form.pages in Resources */,
+				80DD02C817CCE03700E19059 /* Significant Figures, Indices and Standard Form.pdf in Resources */,
+				80DD02C917CCE03700E19059 /* Similarity and Congruency.pages in Resources */,
+				80DD02CA17CCE03700E19059 /* Similarity and Congruency.pdf in Resources */,
+				80DD02CB17CCE03700E19059 /* Simultaneous Equation.pages in Resources */,
+				80DD02CC17CCE03700E19059 /* Simultaneous Equation.pdf in Resources */,
+				80DD02CD17CCE03700E19059 /* Solving Quadratic Equations.pages in Resources */,
+				80DD02CE17CCE03700E19059 /* Solving Quadratic Equations.pdf in Resources */,
+				80DD02CF17CCE03700E19059 /* TabBarImage.png in Resources */,
+				80DD02D017CCE03700E19059 /* Trigonometry.pages in Resources */,
+				80DD02D117CCE03700E19059 /* Trigonometry.pdf in Resources */,
+				8043D88D17CCE1CB002D1B7A /* MainStoryboard.storyboard in Resources */,
+				8043D89717CCEA53002D1B7A /* All.png in Resources */,
+				8043D89817CCEA53002D1B7A /* Bag 1.png in Resources */,
+				8043D89917CCEA53002D1B7A /* Bag 2.png in Resources */,
+				8043D89A17CCEA53002D1B7A /* Bag 3.png in Resources */,
+				8043D89B17CCEA53002D1B7A /* Bag 4.png in Resources */,
+				8043D89C17CCEA53002D1B7A /* BagAll.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		802FA76F17B8CEFC003B011D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				802FA78317B8CEFC003B011D /* main.m in Sources */,
+				802FA78717B8CEFC003B011D /* warrenAppDelegate.m in Sources */,
+				802FA79317B8CEFD003B011D /* warrenViewController.m in Sources */,
+				803C4F1617C1F95D00D564DD /* Chapters.m in Sources */,
+				809C1AC417C20F9F00E56416 /* Sec2ViewController.m in Sources */,
+				8041B64F17C7673A0021874E /* S2ChapterViewController.m in Sources */,
+				806A68E017CB6D9F00598DCA /* OverallChapterViewController.m in Sources */,
+				806A68E117CB6D9F00598DCA /* OverallViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80DD026417CCDFC600E19059 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80DD027317CCDFC600E19059 /* main.m in Sources */,
+				80DD027717CCDFC600E19059 /* warrenAppDelegate.m in Sources */,
+				80DD028317CCDFC700E19059 /* warrenViewController.m in Sources */,
+				80DD02B717CCE03700E19059 /* Chapters.m in Sources */,
+				80DD02BD17CCE03700E19059 /* OverallChapterViewController.m in Sources */,
+				80DD02BE17CCE03700E19059 /* OverallViewController.m in Sources */,
+				80DD02C317CCE03700E19059 /* S2ChapterViewController.m in Sources */,
+				80DD02C417CCE03700E19059 /* Sec2ViewController.m in Sources */,
+				8043D8A017CCEC15002D1B7A /* BagViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		802FA77F17B8CEFC003B011D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				802FA78017B8CEFC003B011D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		802FA78E17B8CEFD003B011D /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				802FA78F17B8CEFD003B011D /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		8043D88B17CCE1CB002D1B7A /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8043D88C17CCE1CB002D1B7A /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		80DD026F17CCDFC600E19059 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80DD027017CCDFC600E19059 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		80DD029017CCE03700E19059 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80DD029117CCE03700E19059 /* en */,
+			);
+			name = InfoPlist.strings;
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		802FA79417B8CEFD003B011D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		802FA79517B8CEFD003B011D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		802FA79717B8CEFD003B011D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Learning [Math Notes]/Learning [Math Notes]-Prefix.pch";
+				INFOPLIST_FILE = "Learning [Math Notes]/Learning [Math Notes]-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		802FA79817B8CEFD003B011D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Learning [Math Notes]/Learning [Math Notes]-Prefix.pch";
+				INFOPLIST_FILE = "Learning [Math Notes]/Learning [Math Notes]-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		80DD028417CCDFC700E19059 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Learning [Math Notes]2/Learning [Math Notes]2-Prefix.pch";
+				INFOPLIST_FILE = "Learning [Math Notes]2/Learning [Math Notes]2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		80DD028517CCDFC700E19059 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Learning [Math Notes]2/Learning [Math Notes]2-Prefix.pch";
+				INFOPLIST_FILE = "Learning [Math Notes]2/Learning [Math Notes]2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		802FA76E17B8CEFC003B011D /* Build configuration list for PBXProject "Learning [Math Notes]" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				802FA79417B8CEFD003B011D /* Debug */,
+				802FA79517B8CEFD003B011D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		802FA79617B8CEFD003B011D /* Build configuration list for PBXNativeTarget "Learning [Math Notes]" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				802FA79717B8CEFD003B011D /* Debug */,
+				802FA79817B8CEFD003B011D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80DD028617CCDFC700E19059 /* Build configuration list for PBXNativeTarget "Learning [Math Notes]2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80DD028417CCDFC700E19059 /* Debug */,
+				80DD028517CCDFC700E19059 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 802FA76B17B8CEFC003B011D /* Project object */;
+}
